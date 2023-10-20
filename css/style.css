@@ -6,20 +6,31 @@ body {
 }
 
 header {
+    height: 55px;
     width: 100%;
     background: white;
+    display: flex;
+    align-items: center;
 }
 
-.left-nav {
-    max-width: 140px;
-    height: calc(100vh - 54px);
+nav {
+    width: 130px;
+    height: calc(100vh - 55px);
     background-color: #12293f;
     background-image: url(../img/sidebar-bg.png);
 }
 
 main {
-    width: calc(100% - 140px);
-    height: calc(100% - 60px);
+    width: calc(100% - 130px);
+    height: calc(100% - 55px);
     background: #f8f9fa;
     overflow-y: auto;
+}
+
+td {
+    font-size: 13px;
+}
+
+td > img {
+    max-width: 23px;
 }
