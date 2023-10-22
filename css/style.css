@@ -14,14 +14,15 @@ header {
 }
 
 nav {
-    width: 130px;
+    /* width: 130px; */
+    width: 144px;
     height: calc(100vh - 55px);
     background-color: #12293f;
     background-image: url(../img/sidebar-bg.png);
 }
 
 main {
-    width: calc(100% - 130px);
+    width: calc(100% - 144px);
     height: calc(100% - 55px);
     background: #f8f9fa;
     overflow-y: auto;
@@ -33,4 +34,48 @@ td {
 
 td > img {
     max-width: 23px;
+}
+
+/* --- MEDIAQUERY --- */
+
+
+@media screen and (max-width: 992px) {
+    nav {
+        width: 65px;
+    }
+    main {
+        width: calc(100% - 65px);
+    }    
+}
+
+@media screen and (max-width: 768px){
+    #offcanvasWithBothOptions {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 992px){
+    #offcanvasWithBothOptions {
+        width: 50%;
+    }
+    
+}
+
+/* --- HOVER --- */
+
+.home-hover:hover {
+    background-color: gray;
+}
+
+.stats-hover:hover {
+    background-color: gray;
+}
+
+.signal-hover:hover {
+    background-color: gray;
+}
+
+.admin-hover:hover {
+    background-color: gray;
 }
